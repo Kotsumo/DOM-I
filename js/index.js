@@ -40,3 +40,44 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+const title = document.querySelector('h1');
+title.textContent = 'DOM Is Awesome';
+console.log(title);
+
+const ServicesLink = document.createElement('a')
+ServicesLink.textContent = 'Services';
+ServicesLink.href = '#';
+document.querySelector('nav').appendChild(ServicesLink);
+
+const ProductLink = document.createElement('a')
+ProductLink.textContent = 'Product';
+ProductLink.href = '#';
+document.querySelector('nav').appendChild(ProductLink);
+
+const VisionLink = document.createElement('a')
+VisionLink.textContent = 'Vision';
+VisionLink.href = '#';
+document.querySelector('nav').appendChild(VisionLink);
+
+const FeaturesLink = document.createElement('a')
+FeaturesLink.textContent = 'Features';
+FeaturesLink.href = '#';
+document.querySelector('nav').appendChild(FeaturesLink);
+
+const AboutLink = document.createElement('a')
+AboutLink.textContent = 'About';
+AboutLink.href = '#';
+document.querySelector('nav').appendChild(AboutLink);
+
+const ContactLink = document.createElement('a')
+ContactLink.textContent = 'Contact';
+ContactLink.href = '#';
+document.querySelector('nav').appendChild(ContactLink);
+
+console.log(document.querySelector('nav'))
+
+
+//const mainimg = document.querySelector('.cta-img');
+//src = ('src', 'img/header-img.png');

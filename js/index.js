@@ -46,38 +46,59 @@ const title = document.querySelector('h1');
 title.textContent = 'DOM Is Awesome';
 console.log(title);
 
-const ServicesLink = document.createElement('a')
-ServicesLink.textContent = 'Services';
-ServicesLink.href = '#';
-document.querySelector('nav').appendChild(ServicesLink);
+// header
+const servicesLink = document.querySelectorAll('a');
+servicesLink[0].textContent = 'Services';
+servicesLink[1].textContent = 'Product';
+servicesLink[2].textContent = 'Vision';
+servicesLink[3].textContent = 'Features';
+servicesLink[4].textContent = 'About';
+servicesLink[5].textContent = 'Contact';
 
-const ProductLink = document.createElement('a')
-ProductLink.textContent = 'Product';
-ProductLink.href = '#';
-document.querySelector('nav').appendChild(ProductLink);
+// button
+const getStarted = document.querySelector('button');
+getStarted.textContent = 'Get Started';
+console.log(getStarted);
 
-const VisionLink = document.createElement('a')
-VisionLink.textContent = 'Vision';
-VisionLink.href = '#';
-document.querySelector('nav').appendChild(VisionLink);
+// img1
+const mainimg = document.querySelector('#cta-img');
+mainimg.setAttribute('src', 'img/header-img.png');
 
-const FeaturesLink = document.createElement('a')
-FeaturesLink.textContent = 'Features';
-FeaturesLink.href = '#';
-document.querySelector('nav').appendChild(FeaturesLink);
+//img2
+const middleimg = document.querySelector('#middle-img');
+middleimg.setAttribute('src', 'img/mid-page-accent.jpg');
 
-const AboutLink = document.createElement('a')
-AboutLink.textContent = 'About';
-AboutLink.href = '#';
-document.querySelector('nav').appendChild(AboutLink);
+// text
+const featuretext = document.querySelectorAll('.text-content h4');
+featuretext[0].textContent = 'Features';
+featuretext[1].textContent = 'About';
+featuretext[2].textContent = 'Services';
+featuretext[3].textContent = 'Product';
+featuretext[4].textContent = 'Vision';
+console.log(featuretext);
 
-const ContactLink = document.createElement('a')
-ContactLink.textContent = 'Contact';
-ContactLink.href = '#';
-document.querySelector('nav').appendChild(ContactLink);
+// text
+const featuretextp = document.querySelectorAll('.text-content p');
+featuretextp[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+featuretextp[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+featuretextp[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+featuretextp[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+featuretextp[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
-console.log(document.querySelector('nav'))
+console.log(featuretext);
 
+// contact
+const contactInfo = document.querySelectorAll('.contact h4');
+contactInfo[0].textContent = 'Contact';
+console.log(contactInfo);
 
-//const mainimg = document.querySelector('.cta-img');
-//src = ('src', 'img/header-img.png');
+const contactInfop = document.querySelectorAll('.contact p');
+contactInfop[0].textContent = '123 Way 456 Street Somewhere, USA';
+contactInfop[1].textContent = '1 (888) 888-8888';
+contactInfop[2].textContent = 'sales@greatidea.io';
+console.log(contactInfo);
+
+// footer
+const footerinfo = document.querySelector('footer');
+footerinfo.textContent = 'Copyright Great Idea! 2018';
+console.log(footerinfo);
